@@ -3,8 +3,14 @@
 #include <stdio.h>
 int		main(void)
 {
-  printf("%++d", 5);
-  ft_printf("%++d", 5);
+  printf("vrai %++d\n", 5);
+  ft_printf("faux %++d\n", 5);
+  printf("vrai %10x\n", 42);
+  ft_printf("faux %10x\n", 42);
+  printf("vrai %10X\n", 42);
+  ft_printf("faux %10X\n", 42);
+  printf("vrai %-10X\n", 42);
+  ft_printf("faux %-10X\n", 42);
   /*  
   	printf("-----------TEST_PERCENTS-------------\n");
 	printf("\nret = %d\n", ft_printf("%%"));

@@ -44,17 +44,17 @@ t_flag			*check_flag2(t_flag *flg, char *str, int i)
 	while (!(ft_strchr(CONV, str[i])) && str[i])
 	{
 		if (str[i] == 'j')
-			flg->j = 1;
+			flg->j++;
 		if (str[i] == 'z')
-			flg->z = 1;
+			flg->z++;
 		if (str[i] == 'l' && str[i - 1] != 'l')
-			flg->l = 1;
+			flg->l++;
 		if (str[i] == 'l' && str[i - 1] == 'l')
-			flg->ll = 1;
+			flg->ll++;
 		if (str[i] == 'h' && str[i - 1] != 'h')
-			flg->h = 1;
+			flg->h++;
 		if (str[i] == 'h' && str[i - 1] == 'h')
-			flg->hh = 1;
+			flg->hh++;
 		i++;
 	}
 	flg = get_precision(flg, str, tmp);
@@ -98,15 +98,15 @@ t_flag			*check_flag(t_flag *flg, char *str, int i)
 	while (!ft_strchr(CONV, str[i]) && str[i])
 	{
 		if (str[i] == '#')
-			flg->diese = 1;
+			flg->diese++;
 		if (str[i] == '+')
-			flg->plus = 1;
+			flg->plus++;
 		if (str[i] == '-')
-			flg->less = 1;
+			flg->less++;
 		if (str[i] == ' ')
-			flg->space = 1;
+			flg->space++;
 		if (str[i] == '0' && !ft_strchr(NUM, str[i - 1]))
-			flg->zero = 1;
+			flg->zero++;
 		i++;
 	}
 	flg = (check_number(flg, str, tmp));
