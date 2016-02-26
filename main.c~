@@ -101,10 +101,10 @@ int		main(void)
   printf("ret = %d\n",ft_printf("%p", &i));
   printf("ret = %d\n", printf("%p", &i));
   printf(">>>>>>>>>>>>>TEST>>>>>>>>>>>>>>\n");
-  printf("ret = %d\n", ft_printf("%hhu / %hhu", SHRT_MAX - 42, SHRT_MAX - 4200));
-  printf("ret = %d\n", printf("%hhu / %hhu", SHRT_MAX - 42, SHRT_MAX - 4200));
-  printf("ret = %d\n", ft_printf("%hhd / %hhd", SHRT_MAX - 42, SHRT_MAX - 4200));
-  printf("ret = %d\n", printf("%hhd / %hhd", SHRT_MAX - 42, SHRT_MAX - 4200));
+  printf("ret = %d\n", ft_printf("%hhu / %hhu\n", SHRT_MAX - 42, SHRT_MAX - 4200));
+  printf("ret = %d\n", printf("%hhu / %hhu\n", SHRT_MAX - 42, SHRT_MAX - 4200));
+  printf("ret = %d\n", ft_printf("%hhd / %hhd\n", SHRT_MAX - 42, SHRT_MAX - 4200));
+  printf("ret = %d\n", printf("%hhd / %hhd\n", SHRT_MAX - 42, SHRT_MAX - 4200));
   printf("ret = %d\n", ft_printf("%jd%jd", 0, 42));
   printf("ret = %d\n", printf("%jd%jd", 0, 42));
   //  printf("ret = %d\n", ft_printf("{%15}"));

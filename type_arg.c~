@@ -14,12 +14,11 @@
 
 int		type_arg(char *str, int i, va_list *ap, t_flag *flg)
 {
-  	if (str[i] == '.' && (va_arg(*ap, int) == 0)) // test
+  /*	if (str[i] == '.' && (va_arg(*ap, int) == 0)) // test
 	  {
 	    flg->prec = 1;
-	    i++;
 	    return (0);
-	    } // test
+	    }*/ // test
 	if (str[i] == 'd' || str[i] == 'i')
 		return (convert_di(ap, flg));
 	else	if (str[i] == 's')

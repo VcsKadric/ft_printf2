@@ -19,6 +19,8 @@ int		convert_s(va_list *ap, t_flag *flg)
 
 	ret = 0;
 	str = va_arg(*ap, char *);
+	ft_putstr("flg->prec_nb = "); // test
+	ft_putnbr(flg->prec_nb); // test
 	if (str == NULL || !str)
 	{
 		ft_putstr("(null)");

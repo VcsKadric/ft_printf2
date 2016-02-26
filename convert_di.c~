@@ -103,9 +103,8 @@ int			convert_di(va_list *ap, t_flag *flg)
 	if (flg->l || flg->ll || flg->j || flg->z)
 		lnb = va_arg(*ap, long long int);
 	else
-	  nb = va_arg(*ap, int);
-	if (flg->hh) // test
-	  nb = (char)nb;// test
+		nb = va_arg(*ap, int);
+
 	flg = get_sign(nb, lnb, flg);
 	if (nb)
 		tmp = nbr_len(nb);

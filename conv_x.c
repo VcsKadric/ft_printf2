@@ -30,7 +30,7 @@ int			conv_x(va_list *ap, t_flag *flg)
 
 	tmp = 0;
 	ret = 0;
-	nb = va_arg(*ap, int);//t_ulli);
+	nb = va_arg(*ap, t_ulli);
 	str = itoa_hex(nb);
 	while (str[tmp])
 	{

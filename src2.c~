@@ -68,8 +68,8 @@ void		put_long_nb(long long nb)
 		ft_putchar(48 + nb);
 	else
 	{
-		put_long_nb(nb / 10);
-		put_long_nb(nb % 10);
+		ft_putnbrlong(nb / 10);
+		ft_putnbrlong(nb % 10);
 	}
   /*
 	if (nb == -9223372036854775807 - 1)

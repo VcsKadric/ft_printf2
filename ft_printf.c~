@@ -71,8 +71,10 @@ int		ft_read_print(char *str, va_list *ap)
 				i = adapt_flag(flag, i);
 			ret = ret + type_arg(str, i, ap, flag);
 		}
+		if (type_arg(str, i, ap, flag) == 0) // test
+		  break; //test
 		else
-		  ret += 1 + ret_putchar(str[i]);
+			ret += 1 + ret_putchar(str[i]);
 		i++;
 	}
 	return (ret);
