@@ -31,6 +31,8 @@ int			conv_x(va_list *ap, t_flag *flg)
 	tmp = 0;
 	ret = 0;
 	nb = va_arg(*ap, t_ulli);
+	if (flg->hh)
+	  nb = (unsigned char)nb;
 	str = itoa_hex(nb);
 	while (str[tmp])
 	{

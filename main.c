@@ -1,9 +1,11 @@
 #include "printf.h"
-
+#include <locale.h>
+#include <stdio.h>
 int		main(void)
 {
-  printf("%.d", 0);
-  
+  printf("%++d", 5);
+  ft_printf("%++d", 5);
+  /*  
   	printf("-----------TEST_PERCENTS-------------\n");
 	printf("\nret = %d\n", ft_printf("%%"));
 	printf("\nret = %d\n\n", printf("%%"));
@@ -107,6 +109,25 @@ int		main(void)
   printf("ret = %d\n", printf("%hhd / %hhd", SHRT_MAX - 42, SHRT_MAX - 4200));
   printf("ret = %d\n", ft_printf("%jd%jd", 0, 42));
   printf("ret = %d\n", printf("%jd%jd", 0, 42));
+  printf("<<<<<<<<<<<<testHHo REAL PRTF>>>>>>>>>>>>>>>\n");
+  printf("UCHAR_MAX = %o\n", UCHAR_MAX);
+  printf("UCHAR_MAX + 45 = %o\n", UCHAR_MAX + 45);
+  printf("UCHAR_MAX (hh) = %hho\n", UCHAR_MAX);
+  printf("UCHAR_MAX (hh) + 45 = %hho\n", UCHAR_MAX + 45);
+  printf("USHRT_MAX (o) = %o\n", USHRT_MAX);
+  printf("USHRT_MAX (O) = %O\n", USHRT_MAX);
+  printf("USHRT_MAX (hho) = %hho\n", USHRT_MAX);
+  printf("USHRT_MAX (hhO) = %hhO\n", USHRT_MAX);
+  printf("<<<<<<<<<<<<testHHo FT_PRTF>>>>>>>>>>>>>>>\n");
+  ft_printf("USHRT_MAX (o) = %o\n", USHRT_MAX);
+  ft_printf("USHRT_MAX (O) = %O\n", USHRT_MAX);
+  ft_printf("USHRT_MAX (hho) = %hho\n", USHRT_MAX);
+  ft_printf("USHRT_MAX (hhO) = %hhO\n", USHRT_MAX);
+  printf("<<<<<<<<<<<<ENDtestHHo >>>>>>>>>>>>>>>\n");
+  printf("ret = %d\n", ft_printf("%hho, %hho", 0, UCHAR_MAX + 42));
+  printf("ret = %d\n", printf("%hho, %hho", 0, UCHAR_MAX + 42));
+  printf("ret = %d\n", ft_printf("%hhO, %hhO", 0, USHRT_MAX));
+  printf("ret = %d\n", printf("%hhO, %hhO", 0, USHRT_MAX));
   //  printf("ret = %d\n", ft_printf("{%15}"));
   //  printf("ret = %d\n", printf("{%15}"));
   /*  printf(">>>>>>>>>>>WTF>>>>>>>>>>>>>\n");

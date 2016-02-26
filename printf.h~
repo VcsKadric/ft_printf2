@@ -83,7 +83,6 @@ int				conv_d(va_list *ap);
 int				conv_s(va_list *ap);
 int				conv_o(va_list *ap, t_flag *flg);
 int				conv_u(va_list *ap, t_flag *flg);
-int				conv_c(va_list *ap, t_flag *flg);
 int				print_prec(t_flag *flg, int nb);
 int				ft_strlen(const char *s);
 int				ft_atoi(const char *s);
